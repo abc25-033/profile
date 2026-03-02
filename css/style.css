@@ -20,5 +20,16 @@ h1#sitetitle{
 font-family:Arial;
 font-size:32PX;
 color:orange;
-
+text-align:center;
 }
+
+/*site motto*/
+span#ditemotto{
+font-size:18px;
+font- family:tahoma;
+font-style:italic;
+color:aqua;
+text-align:center;
+}
+
+
