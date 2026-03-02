@@ -13,5 +13,12 @@ height:150px;
 background-image:linear-gradient(greenyellow,cyan,teal);
 border:1px solid darkgrey;
 border-radius:5px 5px 0 0;
+}
+
+/*stling sitr title*/
+h1#sitetitle{
+font-family:Arial;
+font-size:32PX;
+color:orange;
 
 }
