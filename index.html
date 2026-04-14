@@ -1,51 +1,65 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <tittle>
-      My Personal Profile
-    </tittle>
-    <meta charset="utf-8">
-    <style>
-        h1{colour:green;}        
-    </style>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-  </head>
-  <body> 
-    <div id="divmaincontainer"> 
-        <header id="siteheader">
-          <h1 id="sitetitle">My Personal Website</h1>
-          <span id="sitemotto">mighty God lives.</span>
-        </header>     
-<nav id="sitenav">
- <ul id="ulnav">
-  <li><a href="#">Home</a></li>
-  <li><a href="#">Education</a></li>
-  <li><a href="#">Experience</a></li>
-  <li><a href="#">Projects</a></li>
-  <li><a href="hobbies.html">Hobbies</a></li>
-  <li><a href="#">Research</a></li>
-</nav>
- <main id="maincontent">
-   <section>
-       <h1>Personal details</h1>
-       <p>My name is Bakang Megale living in capetown.</p> 
-   </section>
-   <article>
-     <p>....</p>      
-   </article>
- </main>          
-    <footer>
-      <p>Copyright@2026 bakangthuto7</p>
-      <hr>
-      <section id="socialmedia">
-        <a href="facebook.com"><img src="FB.jpg"></a>
-        <a href="web.whatsapp.com"><imgsrc="WP.jpg"></a> 
-      </section>         
-    </footer>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kingsman Suits - Bespoke and ready-to-wear suits in Gaborone. Tailored for the modern gentleman.">
+  <title>Kingsman Suits | Tailored for the Throne</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html" aria-label="Kingsman Suits Home">KINGSMAN SUITS</a>
+      </div>
+      
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      
+      <nav class="navbar" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="suits.html">Suits</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-  
-  </body>
-
-
-  
+  </header>
+ 
+  <main>
+    <section class="hero">
+      <div class="hero-image">
+        <img src="Images/Banner/kingsman-hero.jpg" alt="Man in tailored Kingsman Suit">
+      </div>
+      <div class="hero-content container">
+        <h1>Dress Like a Kingsman</h1>
+        <p>Bespoke and ready-to-wear suits for men who lead. Cut sharp. Built to last.</p>
+        <a href="suits.html" class="btn btn-primary">View Collection</a>
+        <a href="contact.html" class="btn btn-secondary">Book Fitting</a>
+      </div>
+    </section>
+  </main>
+ 
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Kingsman Suits. All rights reserved. | Gaborone, Botswana</p>
+    </div>
+  </footer>
+ 
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.navbar');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('nav-open');
+    });
+  </script>
+</body>
 </html>
+ 
